@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, TouchableOpacity } from "react-native";
+import { Image, Text } from "react-native";
 import styles from "./styles";
 
 const imagem = Math.floor(Math.random() * 4 + 1);
