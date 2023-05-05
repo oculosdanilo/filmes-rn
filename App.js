@@ -1,8 +1,8 @@
-
-import { StyleSheet, Text, View } from 'react-native';
-import Header from './src/components/header';
-import Search from './src/components/searchBar';
-import BannerMovies from './src/components/banner';
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import Header from "./src/components/header";
+import Search from "./src/components/searchBar";
+import BannerMovies from "./src/components/banner";
+import Filmes from "./src/data/filmes";
 
 export default function App() {
   return (
@@ -10,6 +10,9 @@ export default function App() {
       <Header></Header>
       <Search></Search>
       <BannerMovies></BannerMovies>
+      <FlatList data={Filmes} keyExtractor={(item) => item.id} renderItem={({item}) => (
+        <Text>{item.nome}</Text>
+      )} />
     </View>
   );
 }
@@ -17,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#141A29',
-    alignItems: 'center',
+    backgroundColor: "#141A29",
+    alignItems: "center",
   },
 });

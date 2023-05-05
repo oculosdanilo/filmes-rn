@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		color: "white",
 		marginTop: 15,
-		marginLeft: -180,
 		fontWeight: "bold"
 	},
 	imageBanner: {
