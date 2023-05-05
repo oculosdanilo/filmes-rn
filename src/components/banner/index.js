@@ -8,7 +8,7 @@ export default function BannerMovies() {
   return (
     <>
       <Text style={styles.textBanner}>Em cartaz:</Text>
-      <Image source={require(`../../Img/${imagem}.jpg`)} style={styles.imageBanner} />
+      <Image source={require(`../../img/${imagem}.jpg`)} style={styles.imageBanner} />
     </>
   );
 }
