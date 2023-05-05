@@ -18,7 +18,6 @@ export default function App() {
         renderItem={({ item }) => (
           
             <Text>{item.nome}</Text>
-          
         )}
       />
       </View>
