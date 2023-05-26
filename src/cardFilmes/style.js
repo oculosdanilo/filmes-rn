@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
     paddingRight: 16,
     width: 140,
-    height: 28,
   },
   titulo: {
     color: "#fff",
