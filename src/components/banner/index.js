@@ -2,13 +2,27 @@ import React from "react";
 import { Image, Text } from "react-native";
 import styles from "./styles";
 
-const imagem = Math.floor(Math.random() * 4 + 1);
+var imagens = [
+  require("../../Img/1.jpg"),
+  require("../../Img/2.jpg"),
+  require("../../Img/3.jpg"),
+  require("../../Img/4.jpg"),
+];
 
-export default function BannerMovies() {
+function BannerMovies() {
   return (
     <>
       <Text style={styles.textBanner}>Em cartaz:</Text>
-      <Image source={require(`../../img/${imagem}.jpg`)} style={styles.imageBanner} />
+      <Image
+        source={imagens[Math.floor(Math.random() * 4)]}
+        style={styles.imageBanner}
+      />
     </>
   );
 }
+
+function Texto({ texto }) {
+  return <Text style={styles.textBanner}>{texto}</Text>;
+}
+
+export { BannerMovies, Texto };
