@@ -9,7 +9,7 @@ import Header from "./src/components/header";
 import Search from "./src/components/searchBar";
 import { BannerMovies, Texto } from "./src/components/banner";
 import Filmes from "./src/data/filmes";
-import CardFilmes from "./src/cardFilmes";
+import CardFilmes from "./src/components/cardFilmes";
 import Series from "./src/data/series";
 
 export default function App() {

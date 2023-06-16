@@ -13,3 +13,4 @@ android/
 
 # macOS
 .DS_Store
+.vercel
